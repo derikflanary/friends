@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableViewDataSource: TableViewDataSource!
+    
+    var friendService = FriendsService()
+
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableViewDataSource.friends = friendService.friends
+        tableView.reloadData()
+    }
+    
+    @IBAction func runTapped(_ sender: Any) {
+        do {
+            _ = try friendService.assignRecipentsToFriends()
+            tableViewDataSource.friends = friendService.friends
+            tableView.reloadData()
+        } catch {
+            runTapped(self)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func undoTapped(_ sender: Any) {
+        tableViewDataSource.friends = []
+        tableView.reloadData()
     }
-
-
 }
 

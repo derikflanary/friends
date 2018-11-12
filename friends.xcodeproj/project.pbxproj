@@ -12,8 +12,10 @@
 		EC53AD801DF5DCE200F55BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC53AD7E1DF5DCE200F55BD8 /* Main.storyboard */; };
 		EC53AD821DF5DCE200F55BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC53AD811DF5DCE200F55BD8 /* Assets.xcassets */; };
 		EC53AD851DF5DCE200F55BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC53AD831DF5DCE200F55BD8 /* LaunchScreen.storyboard */; };
-		EC53AD901DF5DCE200F55BD8 /* friendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53AD8F1DF5DCE200F55BD8 /* friendsTests.swift */; };
-		EC53AD9B1DF5DCE200F55BD8 /* friendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53AD9A1DF5DCE200F55BD8 /* friendsUITests.swift */; };
+		EC53ADA91DF5DDDD00F55BD8 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53ADA81DF5DDDD00F55BD8 /* TableViewDataSource.swift */; };
+		EC53ADAB1DF5DE3E00F55BD8 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53ADAA1DF5DE3E00F55BD8 /* Friend.swift */; };
+		EC53ADAD1DF5DEAD00F55BD8 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53ADAC1DF5DEAD00F55BD8 /* FriendCell.swift */; };
+		EC53ADAF1DF5E8DA00F55BD8 /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53ADAE1DF5E8DA00F55BD8 /* FriendService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +44,11 @@
 		EC53AD841DF5DCE200F55BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC53AD861DF5DCE200F55BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC53AD8B1DF5DCE200F55BD8 /* friendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC53AD8F1DF5DCE200F55BD8 /* friendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendsTests.swift; sourceTree = "<group>"; };
-		EC53AD911DF5DCE200F55BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC53AD961DF5DCE200F55BD8 /* friendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC53AD9A1DF5DCE200F55BD8 /* friendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendsUITests.swift; sourceTree = "<group>"; };
-		EC53AD9C1DF5DCE200F55BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC53ADA81DF5DDDD00F55BD8 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		EC53ADAA1DF5DE3E00F55BD8 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		EC53ADAC1DF5DEAD00F55BD8 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		EC53ADAE1DF5E8DA00F55BD8 /* FriendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				EC53AD791DF5DCE200F55BD8 /* friends */,
-				EC53AD8E1DF5DCE200F55BD8 /* friendsTests */,
-				EC53AD991DF5DCE200F55BD8 /* friendsUITests */,
 				EC53AD781DF5DCE200F55BD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,30 +99,16 @@
 			children = (
 				EC53AD7A1DF5DCE200F55BD8 /* AppDelegate.swift */,
 				EC53AD7C1DF5DCE200F55BD8 /* ViewController.swift */,
+				EC53ADAE1DF5E8DA00F55BD8 /* FriendService.swift */,
+				EC53ADA81DF5DDDD00F55BD8 /* TableViewDataSource.swift */,
+				EC53ADAC1DF5DEAD00F55BD8 /* FriendCell.swift */,
+				EC53ADAA1DF5DE3E00F55BD8 /* Friend.swift */,
 				EC53AD7E1DF5DCE200F55BD8 /* Main.storyboard */,
 				EC53AD811DF5DCE200F55BD8 /* Assets.xcassets */,
 				EC53AD831DF5DCE200F55BD8 /* LaunchScreen.storyboard */,
 				EC53AD861DF5DCE200F55BD8 /* Info.plist */,
 			);
 			path = friends;
-			sourceTree = "<group>";
-		};
-		EC53AD8E1DF5DCE200F55BD8 /* friendsTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC53AD8F1DF5DCE200F55BD8 /* friendsTests.swift */,
-				EC53AD911DF5DCE200F55BD8 /* Info.plist */,
-			);
-			path = friendsTests;
-			sourceTree = "<group>";
-		};
-		EC53AD991DF5DCE200F55BD8 /* friendsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EC53AD9A1DF5DCE200F55BD8 /* friendsUITests.swift */,
-				EC53AD9C1DF5DCE200F55BD8 /* Info.plist */,
-			);
-			path = friendsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC53ADA91DF5DDDD00F55BD8 /* TableViewDataSource.swift in Sources */,
 				EC53AD7D1DF5DCE200F55BD8 /* ViewController.swift in Sources */,
 				EC53AD7B1DF5DCE200F55BD8 /* AppDelegate.swift in Sources */,
+				EC53ADAB1DF5DE3E00F55BD8 /* Friend.swift in Sources */,
+				EC53ADAD1DF5DEAD00F55BD8 /* FriendCell.swift in Sources */,
+				EC53ADAF1DF5E8DA00F55BD8 /* FriendService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC53AD901DF5DCE200F55BD8 /* friendsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC53AD9B1DF5DCE200F55BD8 /* friendsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +406,7 @@
 				DEVELOPMENT_TEAM = 92H4P6C5WB;
 				INFOPLIST_FILE = friends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.events.friends;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.friends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,7 +419,7 @@
 				DEVELOPMENT_TEAM = 92H4P6C5WB;
 				INFOPLIST_FILE = friends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.events.friends;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.friends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,6 +502,7 @@
 				EC53ADA11DF5DCE200F55BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC53ADA21DF5DCE200F55BD8 /* Build configuration list for PBXNativeTarget "friendsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +511,7 @@
 				EC53ADA41DF5DCE200F55BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC53ADA51DF5DCE200F55BD8 /* Build configuration list for PBXNativeTarget "friendsUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +520,7 @@
 				EC53ADA71DF5DCE200F55BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
