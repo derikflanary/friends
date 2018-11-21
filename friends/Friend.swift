@@ -23,10 +23,10 @@ enum Human: String, CaseIterable {
     case autumn
     case max
     case mal
-    case tylerAndAllae
-    case samAndJo
-    case karleyAndJames
-    case dannyAndLenny
+    case samAndJo = "Sam and Jo"
+    case tylerAndAllae = "Tyler and Allae"
+    case karleyAndJames = "Karley and James"
+    case dannyAndLenny = "Danny and Lenny"
 
 
     var lover: Human? {

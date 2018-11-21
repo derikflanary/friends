@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Friendsmas-->
+        <!--Friendsmas 🎅🏿-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="friends" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                             <constraint firstAttribute="trailing" secondItem="JrK-OP-Z3Y" secondAttribute="trailing" id="Zzj-Kz-1l8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Friendsmas" id="Uct-fy-Cgo">
+                    <navigationItem key="navigationItem" title="Friendsmas 🎅🏿" id="Uct-fy-Cgo">
                         <barButtonItem key="leftBarButtonItem" systemItem="undo" id="6qF-Zy-zty">
                             <color key="tintColor" red="0.71815513959999999" green="0.08992566079" blue="0.074297306379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -94,12 +94,31 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyStateView" destination="gW4-DR-JSd" id="TQx-eD-adK"/>
                         <outlet property="tableView" destination="JrK-OP-Z3Y" id="I1l-tB-BuC"/>
                         <outlet property="tableViewDataSource" destination="Lux-9f-6Ww" id="Edt-6l-11c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="Lux-9f-6Ww" customClass="TableViewDataSource" customModule="friends" customModuleProvider="target"/>
+                <view contentMode="scaleToFill" id="gW4-DR-JSd">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press play to randomize the Christmas exchange. 🎄" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7u-Ob-lGB">
+                            <rect key="frame" x="16" y="33.666666666666657" width="208" height="61"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="h7u-Ob-lGB" firstAttribute="leading" secondItem="gW4-DR-JSd" secondAttribute="leading" constant="16" id="VyJ-oY-cas"/>
+                        <constraint firstItem="h7u-Ob-lGB" firstAttribute="centerY" secondItem="gW4-DR-JSd" secondAttribute="centerY" id="Xd0-L6-drM"/>
+                        <constraint firstAttribute="trailing" secondItem="h7u-Ob-lGB" secondAttribute="trailing" constant="16" id="Xtr-HG-Tbh"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="1076" y="138.91625615763547"/>
         </scene>

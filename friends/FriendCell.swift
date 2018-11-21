@@ -15,9 +15,9 @@ class FriendCell: UITableViewCell, ReusableView {
     @IBOutlet weak var recipientLabel: UILabel!
     
     func configure(with friend: Friend) {
-        nameLabel.text = friend.human.rawValue
+        nameLabel.text = friend.human.rawValue.capitalized
         guard let recipient = friend.recipient else { return }
-        recipientLabel.text = "Giving to: \(recipient.rawValue)"
+        recipientLabel.text = "Giving to: \(recipient.rawValue.capitalized)"
     }
 
 }
