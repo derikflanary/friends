@@ -12,10 +12,22 @@ import UIKit
 enum Human: String, CaseIterable {
     case derik
     case kandace
-    case sam
     case rob
     case jesse
     case carly
+    case parker
+    case danny
+    case emily
+    case blake
+    case claire
+    case autumn
+    case max
+    case mal
+    case tylerAndAllae
+    case samAndJo
+    case karleyAndJames
+    case dannyAndLenny
+
 
     var lover: Human? {
         switch self {
@@ -23,14 +35,16 @@ enum Human: String, CaseIterable {
             return .kandace
         case .kandace:
             return .derik
-        case .sam:
-            return nil
-        case .rob:
-            return nil
         case .jesse:
             return .carly
         case .carly:
             return .jesse
+        case .emily:
+            return .blake
+        case .blake:
+            return .emily
+        case .parker, .danny, .autumn, .mal, .max, .claire, .rob, .tylerAndAllae, .dannyAndLenny, .samAndJo, .karleyAndJames:
+            return nil
         }
     }
     
