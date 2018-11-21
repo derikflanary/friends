@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var tableViewDataSource: TableViewDataSource!
     @IBOutlet var emptyStateView: UIView!
-
+    @IBOutlet weak var undoButton: UIBarButtonItem!
+    
     var friendService = FriendsService()
 
     override func viewDidLoad() {
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
     
     @IBAction func runTapped(_ sender: Any) {
         tableView.backgroundView = nil
+        undoButton.isEnabled = true
         do {
             _ = try friendService.assignRecipentsToFriends()
             tableViewDataSource.friends = friendService.friends
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
         tableView.backgroundView = emptyStateView
         tableViewDataSource.friends = []
         tableView.reloadData()
+        undoButton.isEnabled = false
     }
 }
 

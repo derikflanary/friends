@@ -21,42 +21,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JrK-OP-Z3Y">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JrK-OP-Z3Y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.065515400459999998" green="0.50160612309999997" blue="0.23685035669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.71815513959390864" green="0.089925660793257575" blue="0.074297306383308628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="3ze-Pl-Xfr">
-                                    <rect key="frame" x="0.0" y="72" width="375" height="1"/>
+                                    <rect key="frame" x="0.0" y="74" width="375" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" id="zdH-ov-Txe" customClass="FriendCell" customModule="friends" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="46" id="zdH-ov-Txe" customClass="FriendCell" customModule="friends" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zdH-ov-Txe" id="Q4I-uA-drk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq0-Lx-dsS">
-                                                    <rect key="frame" x="15" y="14" width="43" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                    <rect key="frame" x="15" y="5" width="45" height="44"/>
+                                                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giving to:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAf-4d-F7E">
-                                                    <rect key="frame" x="299.66666666666669" y="14" width="60.333333333333314" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                                    <rect key="frame" x="277.33333333333331" y="5" width="82.666666666666686" height="44"/>
+                                                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="leadingMargin" secondItem="Oq0-Lx-dsS" secondAttribute="leading" id="7JW-mk-16N"/>
+                                                <constraint firstItem="BAf-4d-F7E" firstAttribute="centerY" secondItem="Q4I-uA-drk" secondAttribute="centerY" constant="4" id="8si-c5-sv3"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="BAf-4d-F7E" secondAttribute="trailing" id="U87-aZ-0cC"/>
-                                                <constraint firstItem="BAf-4d-F7E" firstAttribute="top" secondItem="Q4I-uA-drk" secondAttribute="topMargin" constant="3" id="dtA-XI-E3I"/>
-                                                <constraint firstItem="Oq0-Lx-dsS" firstAttribute="top" secondItem="Q4I-uA-drk" secondAttribute="topMargin" constant="3" id="ebu-Rp-wFw"/>
+                                                <constraint firstItem="Oq0-Lx-dsS" firstAttribute="centerY" secondItem="Q4I-uA-drk" secondAttribute="centerY" constant="4" id="jBh-2G-QJr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -80,7 +80,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Friendsmas 🎅🏿" id="Uct-fy-Cgo">
-                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="6qF-Zy-zty">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" systemItem="undo" id="6qF-Zy-zty">
                             <color key="tintColor" red="0.71815513959999999" green="0.08992566079" blue="0.074297306379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="undoTapped:" destination="BYZ-38-t0r" id="feM-hP-NZN"/>
@@ -97,6 +97,7 @@
                         <outlet property="emptyStateView" destination="gW4-DR-JSd" id="TQx-eD-adK"/>
                         <outlet property="tableView" destination="JrK-OP-Z3Y" id="I1l-tB-BuC"/>
                         <outlet property="tableViewDataSource" destination="Lux-9f-6Ww" id="Edt-6l-11c"/>
+                        <outlet property="undoButton" destination="6qF-Zy-zty" id="bjC-G1-NMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -106,8 +107,8 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press play to randomize the Christmas exchange. 🎄" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7u-Ob-lGB">
-                            <rect key="frame" x="16" y="33.666666666666657" width="208" height="61"/>
-                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <rect key="frame" x="16" y="-57.666666666666671" width="208" height="243.33333333333337"/>
+                            <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
