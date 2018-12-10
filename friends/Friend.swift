@@ -23,6 +23,7 @@ enum Human: String, CaseIterable {
     case autumn
     case max
     case mal
+    case willy
     case samAndJo = "Sam and Jo"
     case tylerAndAllae = "Tyler and Allae"
     case karleyAndJames = "Karley and James"
@@ -43,7 +44,7 @@ enum Human: String, CaseIterable {
             return .blake
         case .blake:
             return .emily
-        case .parker, .danny, .autumn, .mal, .max, .claire, .rob, .tylerAndAllae, .dannyAndLenny, .samAndJo, .karleyAndJames:
+    case .parker, .danny, .autumn, .mal, .max, .willy, .claire, .rob, .tylerAndAllae, .dannyAndLenny, .samAndJo, .karleyAndJames:
             return nil
         }
     }
