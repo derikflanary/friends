@@ -18,23 +18,6 @@
 		EC53ADAF1DF5E8DA00F55BD8 /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53ADAE1DF5E8DA00F55BD8 /* FriendService.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EC53AD8C1DF5DCE200F55BD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC53AD6F1DF5DCE200F55BD8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC53AD761DF5DCE200F55BD8;
-			remoteInfo = friends;
-		};
-		EC53AD971DF5DCE200F55BD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC53AD6F1DF5DCE200F55BD8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC53AD761DF5DCE200F55BD8;
-			remoteInfo = friends;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		EC53AD771DF5DCE200F55BD8 /* friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC53AD7A1DF5DCE200F55BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +26,6 @@
 		EC53AD811DF5DCE200F55BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC53AD841DF5DCE200F55BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC53AD861DF5DCE200F55BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC53AD8B1DF5DCE200F55BD8 /* friendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC53AD961DF5DCE200F55BD8 /* friendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = friendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC53ADA81DF5DDDD00F55BD8 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		EC53ADAA1DF5DE3E00F55BD8 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		EC53ADAC1DF5DEAD00F55BD8 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
@@ -53,20 +34,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		EC53AD741DF5DCE200F55BD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC53AD881DF5DCE200F55BD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC53AD931DF5DCE200F55BD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				EC53AD771DF5DCE200F55BD8 /* friends.app */,
-				EC53AD8B1DF5DCE200F55BD8 /* friendsTests.xctest */,
-				EC53AD961DF5DCE200F55BD8 /* friendsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,42 +96,6 @@
 			productReference = EC53AD771DF5DCE200F55BD8 /* friends.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC53AD8A1DF5DCE200F55BD8 /* friendsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC53ADA21DF5DCE200F55BD8 /* Build configuration list for PBXNativeTarget "friendsTests" */;
-			buildPhases = (
-				EC53AD871DF5DCE200F55BD8 /* Sources */,
-				EC53AD881DF5DCE200F55BD8 /* Frameworks */,
-				EC53AD891DF5DCE200F55BD8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC53AD8D1DF5DCE200F55BD8 /* PBXTargetDependency */,
-			);
-			name = friendsTests;
-			productName = friendsTests;
-			productReference = EC53AD8B1DF5DCE200F55BD8 /* friendsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EC53AD951DF5DCE200F55BD8 /* friendsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC53ADA51DF5DCE200F55BD8 /* Build configuration list for PBXNativeTarget "friendsUITests" */;
-			buildPhases = (
-				EC53AD921DF5DCE200F55BD8 /* Sources */,
-				EC53AD931DF5DCE200F55BD8 /* Frameworks */,
-				EC53AD941DF5DCE200F55BD8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC53AD981DF5DCE200F55BD8 /* PBXTargetDependency */,
-			);
-			name = friendsUITests;
-			productName = friendsUITests;
-			productReference = EC53AD961DF5DCE200F55BD8 /* friendsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,19 +109,8 @@
 					EC53AD761DF5DCE200F55BD8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 92H4P6C5WB;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
-					};
-					EC53AD8A1DF5DCE200F55BD8 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 92H4P6C5WB;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC53AD761DF5DCE200F55BD8;
-					};
-					EC53AD951DF5DCE200F55BD8 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 92H4P6C5WB;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EC53AD761DF5DCE200F55BD8;
 					};
 				};
 			};
@@ -201,6 +119,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -210,8 +129,6 @@
 			projectRoot = "";
 			targets = (
 				EC53AD761DF5DCE200F55BD8 /* friends */,
-				EC53AD8A1DF5DCE200F55BD8 /* friendsTests */,
-				EC53AD951DF5DCE200F55BD8 /* friendsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,20 +141,6 @@
 				EC53AD851DF5DCE200F55BD8 /* LaunchScreen.storyboard in Resources */,
 				EC53AD821DF5DCE200F55BD8 /* Assets.xcassets in Resources */,
 				EC53AD801DF5DCE200F55BD8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC53AD891DF5DCE200F55BD8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC53AD941DF5DCE200F55BD8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,34 +160,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC53AD871DF5DCE200F55BD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC53AD921DF5DCE200F55BD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EC53AD8D1DF5DCE200F55BD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC53AD761DF5DCE200F55BD8 /* friends */;
-			targetProxy = EC53AD8C1DF5DCE200F55BD8 /* PBXContainerItemProxy */;
-		};
-		EC53AD981DF5DCE200F55BD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC53AD761DF5DCE200F55BD8 /* friends */;
-			targetProxy = EC53AD971DF5DCE200F55BD8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC53AD7E1DF5DCE200F55BD8 /* Main.storyboard */ = {
@@ -408,7 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.friends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -421,65 +297,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.friends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		EC53ADA31DF5DCE200F55BD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 92H4P6C5WB;
-				INFOPLIST_FILE = friendsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.events.friendsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/friends.app/friends";
-			};
-			name = Debug;
-		};
-		EC53ADA41DF5DCE200F55BD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 92H4P6C5WB;
-				INFOPLIST_FILE = friendsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.events.friendsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/friends.app/friends";
-			};
-			name = Release;
-		};
-		EC53ADA61DF5DCE200F55BD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 92H4P6C5WB;
-				INFOPLIST_FILE = friendsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.events.friendsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = friends;
-			};
-			name = Debug;
-		};
-		EC53ADA71DF5DCE200F55BD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 92H4P6C5WB;
-				INFOPLIST_FILE = friendsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derikflanary.events.friendsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = friends;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -500,24 +318,6 @@
 			buildConfigurations = (
 				EC53ADA01DF5DCE200F55BD8 /* Debug */,
 				EC53ADA11DF5DCE200F55BD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC53ADA21DF5DCE200F55BD8 /* Build configuration list for PBXNativeTarget "friendsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC53ADA31DF5DCE200F55BD8 /* Debug */,
-				EC53ADA41DF5DCE200F55BD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC53ADA51DF5DCE200F55BD8 /* Build configuration list for PBXNativeTarget "friendsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC53ADA61DF5DCE200F55BD8 /* Debug */,
-				EC53ADA71DF5DCE200F55BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

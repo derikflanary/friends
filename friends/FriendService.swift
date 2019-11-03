@@ -25,18 +25,10 @@ struct FriendsService {
         for (index, friend) in friends.enumerated() {
             var recipentFound = false
             repeat {
-                if friend.human == .samAndJo {
-                    recipentFound = true
-                    friends[index].recipient = .parker
-                    if let recipientIndex = recipients.firstIndex(where: { $0.human == .parker }) {
-                        recipients.remove(at: recipientIndex)
-                    }
-                    continue
-                }
 
                 let randomNumber = Int(arc4random_uniform(UInt32(recipients.count)))
                 let selectedFriend = recipients[randomNumber]
-                if selectedFriend != friend && selectedFriend.human.lover != friend.human && selectedFriend.human != .parker {
+                if selectedFriend != friend && selectedFriend.human.lover != friend.human {
                     recipentFound = true
                     friends[index].recipient = selectedFriend.human
                     recipients.remove(at: randomNumber)
